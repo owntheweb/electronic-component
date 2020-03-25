@@ -1,0 +1,101 @@
+.AlphanumericDisplay {
+  padding: 0 0 20px 0;
+}
+
+.AlphanumericDisplayFrontPanel {
+  background: #1a000b;
+  display: inline-block;
+  padding: 20px;
+  position: relative;
+  margin-bottom: 20px; /* TODO: may be good to add another wrapper with padding instead */
+}
+
+.AlphanumericDisplayCharacters,
+.AlphanumericDisplayCharactersBack {
+  color: #00c8ff;
+  font-size: 30px;
+  letter-spacing: 0.1em;
+  margin-right: -0.2em;
+  display: block;
+  text-align: right;
+  font-family: SegmentLEDDisplay-Bold14;
+	font-weight: normal;
+  font-style: normal;
+  position: relative;
+  z-index: 1;
+  white-space: pre;
+}
+
+.AlphanumericDisplayCharactersBack {
+  color: #3d001a;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 0;
+}
+
+.AlphanumericDisplayBottom {
+  background: #ffe0ee;
+  display: block;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  z-index: 300;
+  height: 20px;
+  width: 100%;
+  transform: skew(15deg, 0deg);
+  transform-origin: top left;
+}
+
+.AlphanumericDisplaySide {
+  height: 100%;
+  background: #fc88bd;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -5px;
+  z-index: 300;
+  width: 5px;
+  transform: skew(0deg, 75deg);
+  transform-origin: top left;
+}
+
+/* TODO: media queries */
+
+@media (min-width: 576px) {  
+  .AlphanumericDisplayCharacters,
+  .AlphanumericDisplayCharactersBack {
+    font-size: 50px;
+  }
+
+  .AlphanumericDisplaySide {
+    right: -5px;
+    width: 5px;
+  }
+}
+ 
+@media (min-width: 768px) {  
+  .AlphanumericDisplayCharacters,
+  .AlphanumericDisplayCharactersBack {
+    font-size: 70px;
+  }
+}
+ 
+@media (min-width: 992px) { 
+  .AlphanumericDisplayCharacters,
+  .AlphanumericDisplayCharactersBack {
+    font-size: 85px;
+  }
+}
+ 
+@media (min-width: 1200px) {  
+  .AlphanumericDisplayCharacters,
+  .AlphanumericDisplayCharactersBack {
+    font-size: 100px;
+  }
+
+  .AlphanumericDisplaySide {
+    right: -6px;
+    width: 6px;
+  }
+}
