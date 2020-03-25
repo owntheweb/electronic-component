@@ -2,9 +2,8 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import App from '../App';
 
-// TODO: This is going to fail now....
-test('renders learn react link', () => {
+test('renders page title', () => {
   const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const titleElement = getByText(/An electronic component.../i);
+  expect(titleElement).toBeInTheDocument();
 });

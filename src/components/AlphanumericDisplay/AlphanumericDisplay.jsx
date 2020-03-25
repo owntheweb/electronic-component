@@ -89,7 +89,7 @@ class AlphanumericDisplay extends Component {
 }
 
 AlphanumericDisplay.defaultProps = {
-  characters: ['H', 'E', 'L', 'L', 'O', ' ', 'A', 'W', 'E', 'S', 'O', 'M', 'E', ' ', 'P', 'E', 'O', 'P', 'L', 'E', ' '],
+  characters: 'HELLO AWESOME PEOPLE ',
   animationTime: 200,
   characterCount: 12,
   addSpace: true,
@@ -97,7 +97,7 @@ AlphanumericDisplay.defaultProps = {
 };
 
 AlphanumericDisplay.propTypes = {
-  characters: PropTypes.array,
+  characters: PropTypes.string,
   animationTime: PropTypes.number,
   characterCount: PropTypes.number,
   addSpace: PropTypes.bool,
